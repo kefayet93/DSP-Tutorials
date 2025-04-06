@@ -5,6 +5,9 @@ Direct Digital Synthesizer (DDS) or Numerically Controlled Oscillator (NCO) is a
 3. Direct-RF waveform synthesis at GHz range for intermediate frequency (IF) millimeter-Wave (mm-Wave) radios
 4.  Direct-RF signal generation for Quantum Error Correction (QEC)
 
+DDS can be operated over a wide frequency range with negligible degradation to the signal quality which is a very critical requirement for the all-digital modem systems.
+
+
 This repository contains a DDS code implemented using Python.
 
 
