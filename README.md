@@ -6,4 +6,4 @@
 $$     y[n] = \sum\limits_{k = 0}^{L-1} h[k]. x[n-k] $$
 
 ## Importance in DSP and Wireless System Design
-* _Channel Estimation_
+* **Channel Estimation:**
