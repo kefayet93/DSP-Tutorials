@@ -24,6 +24,8 @@ $$
   x[N-1] & x[N-2]  & \cdots  & x[N-L]  \\
 \end{pmatrix}
 $$
+
+$\begin{bmatrix}X\\Y\end{bmatrix}$
                        
 ## Importance in DSP and Wireless System Design
 * **Channel Estimation:** estimating the channel impulse response of a multipath wireless channel and performing channel equalization at the receiver for phase, time, and carrier synchronization.
