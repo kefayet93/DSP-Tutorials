@@ -10,4 +10,4 @@ $$     y[n] = \sum\limits_{k = 0}^{L-1} h[k]. x[n-k] $$
 
 ## Importance in DSP and Wireless System Design
 * **Channel Estimation:** estimating the channel impulse response of a multipath wireless channel and performing channel equalization at the receiver for phase, time, and carrier synchronization.
-* **Equalization:** 
+* **Equalization:** estimating the inverse of the channel response to compensate for interference at the receiver, for example, compensating inter-symbol interference (ISI) in an orthogonal frequency division multiplexing (OFDM) receiver. 
