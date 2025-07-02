@@ -25,10 +25,6 @@ From the known input samples $$x[n]$$, we need to form the convolution matrix **
 \end{pmatrix}
 \end{equation}
                        
-\end{bmatrix} $$
-
-
-
 ## Importance in DSP and Wireless System Design
 * **Channel Estimation:** estimating the channel impulse response of a multipath wireless channel and performing channel equalization at the receiver for phase, time, and carrier synchronization.
 * **Channel Equalization:** estimating the inverse of the channel response to compensate for interference at the receiver, for example, compensating inter-symbol interference (ISI) in an orthogonal frequency division multiplexing (OFDM) receiver.
