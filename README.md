@@ -16,7 +16,14 @@ From the known input samples $$x[n]$$, we need to form the convolution matrix **
 * $$x$$ = $$[x[0], x[1], ..., x[N-1]]^T$$
 * For an FIR filter of length $$L$$:
   
-$$  X = \begin{bmatrix} x[L-1] & x[L-2] & \cdots & x[0] \\
+\begin{equation}
+\begin{pmatrix}
+  1       & x^1_0   & x^2_0   & \cdots  & x^{degree}_0  \\
+  1       & x^1_1   & x^2_1   & \cdots  & x^{degree}_1  \\
+  \vdots  & \vdots  & \vdots  & \ddots  & \vdots \\
+  1       & x^1_n   & x^2_n   & \cdots  & x^{degree}_n  \\
+\end{pmatrix}
+\end{equation}
                        
 \end{bmatrix} $$
 
