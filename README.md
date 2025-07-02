@@ -12,7 +12,7 @@ In the above, $$x[n]$$, $$y[n]$$, and $$h[k]$$ represent known transmitted sampl
 ## Parameter Estimation
 **Step 2: Preparing the input Convolution Matrix**
 
-From the known input samples $$x[n]$$, we need to form the convolution matrix **$$X$$**
+From the known input samples $$x[n]$$, we need to form the convolution matrix $$**X**$$
 
 
 
