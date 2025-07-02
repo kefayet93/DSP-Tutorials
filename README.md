@@ -8,7 +8,7 @@ Least Squares (LS)-based estimation is a method of estimating the frequency resp
 
 $$     y[n] = \sum\limits_{k = 0}^{L-1} h[k]. x[n-k] $$
 
-In the above, $$x[n]$$, $$y[n]$$, and $$h[k]$$ represent known transmitted samples, captured received samples, and FIR filter, respectively. 
+In the above, $$x[n]$$, $$y[n]$$, and $$h[k]$$ represent known transmitted samples, captured received samples, and an FIR filter of length $$L$$, respectively. 
 ## Parameter Estimation
 **Step 2: Preparing the input Convolution Matrix**
 
