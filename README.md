@@ -8,6 +8,8 @@ This repository contains Digital Signal Processing (DSP) algorithms implemented 
 
 $$     y[n] = \sum\limits_{k = 0}^{L-1} h[k]. x[n-k] $$
 
+where $$x[n]$$, $$y[n]$$, and $$h[k]$$ represent known transmitted samples, captured received samples, and FIR filter, respectively
+
 ## Importance in DSP and Wireless System Design
 * **Channel Estimation:** estimating the channel impulse response of a multipath wireless channel and performing channel equalization at the receiver for phase, time, and carrier synchronization.
 * **Channel Equalization:** estimating the inverse of the channel response to compensate for interference at the receiver, for example, compensating inter-symbol interference (ISI) in an orthogonal frequency division multiplexing (OFDM) receiver.
