@@ -7,16 +7,13 @@ y = np.array([2.9, 6.0, 9.1, 12.2]) # Received ouput signal (1D array)
 L = 3; # Filter length
 
 def estimate_fir_ls(x,y,L):
-    x = np.asarray(x).flatten() # np.asarraay() ensures "x" is a NumPy array,
-    # and .flatten() makes them 1D)
-    y = np.asarray(y).flatten() # np.asarraay() ensures "y" is a NumPy array,
-    # and .flatten() makes them 1D)
+    x = np.asarray(x).flatten() # np.asarraay() ensures "x" is a NumPy array and .flatten() makes them 1D)
+    y = np.asarray(y).flatten() # np.asarraay() ensures "y" is a NumPy array and .flatten() makes them 1D)
     N = len(x) # totlal number of samples in the input signal "x"
 
-    if len(y)!=N:
+    if len(y)!= N:
         raise ValueError("x and y must be the same length")
-    # Ensures "x" and "y" have the same number of samples and raises an 
-    # error if they don't.
+    # Ensures "x" and "y" have the same number of samples and raises an error if they don't
 
     # Creating the input matrix X
     num_rows = N - L + 1 # Number of rows in the input matrix
@@ -25,6 +22,22 @@ def estimate_fir_ls(x,y,L):
     for i in range(num_rows):
         X[i,:] = x[i+L-1:i-1:-1] # flipped window
         
-    y_trunc = y[L-1:] # Truncated output signal to match the input matrix size
+    y_trunc = y[L - 1:] # Truncated output signal to match the input matrix size
 
-h = estimate_fir_ls(x,y,L)
+    # Solving Least Squares
+    h_est = np.linalg.pinv(X) @ y_trunc # Estimate the FIR filter coefficients using pseudo-inverse
+    return h_est
+
+h = estimate_fir_ls(x, y, L)
+
+# Displaying the estimated filter coefficients
+print("Estimated FIR filter coefficients:")
+print(h)
+
+# Plotting the estimated filter coefficients
+plt.stem(h, use_line_collection=True)
+plt.title("Estimated FIR Filter Coefficients (Least Squares)")
+plt.xlabel("Tap Index")
+plt.ylabel("Amplitude")
+plt.grid(True)
+plt.show()
