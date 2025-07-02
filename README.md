@@ -15,7 +15,8 @@ In the above, $$x[n]$$, $$y[n]$$, and $$h[k]$$ represent known transmitted sampl
 From the known input samples $$x[n]$$, we need to form the convolution matrix **X**:
 * $$x$$ = $$[x[0], x[1], ..., x[N-1]]^T$$
 * For an FIR filter of length $$L$$:
-**X** = $$ 
+**X** =
+$$ 
 \begin{pmatrix}
   x[L-1] & x{L-2}  & \cdots  & x[0] \\
   x{L}   & x[L-1]  & \cdots  & x[1] \\
