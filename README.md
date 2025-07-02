@@ -13,7 +13,7 @@ In the above, $$x[n]$$, $$y[n]$$, and $$h[k]$$ represent known transmitted sampl
 **Step 2: Preparing the input Convolution Matrix**
 
 From the known input samples $$x[n]$$, we need to form the convolution matrix **X**:
-* $$x$$ = [x[0], x[1], ..., x[N-1]]^T
+* $$x$$ = $$[x[0], x[1], ..., x[N-1]]^T$$
 
 
 
