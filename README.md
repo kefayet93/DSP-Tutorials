@@ -1,6 +1,6 @@
 # Least Squares FIR Filter Design: Applications in DSP Wireless System Design
 
-This repository contains Digital Signal Processing (DSP) algorithms implemented in Python
+This repository contains Digital Signal Processing (DSP) algorithms implemented in Python. We start with the implementation of a basic finite impulse response (FIR) filter using Least-Squares (LS) estimation method for estimating the filter coefficients.
 
 ## What is Least-Squares FIR Filter Design?
 ** Least Squares (LS)-based estimation is a method of estimating the frequency response of a discrete-time (DT) system. 
