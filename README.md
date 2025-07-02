@@ -18,10 +18,10 @@ From the known input samples $$x[n]$$, we need to form the convolution matrix **
   
 $$
 \begin{pmatrix}
-  x[L-1]   & x{L-2}   & \cdots  & x[0] \\
-  x^1_1   & x^2_1   & \cdots  & x^{degree}_1  \\
-  \vdots  & \vdots  & \ddots  & \vdots \\
-  x^1_n   & x^2_n   & \cdots  & x^{degree}_n  \\
+  x[L-1] & x{L-2}  & \cdots  & x[0] \\
+  x{L}   & x[L-1]  & \cdots  & x[1] \\
+  \vdots & \vdots  & \ddots  & \vdots \\
+  x[N-1] & x[N-2]  & \cdots  & x[N-L]  \\
 \end{pmatrix}
 $$
                        
