@@ -28,7 +28,8 @@ $$
 In the above, matrix **X** represents the sliding windows over the input signal used in convolution.
 
 **Step 3: Forming the Input-Output Vector**
-The received vector after digitization is aligned with the input vector to match each row of **X** .
+The received vector after digitization is aligned with the input vector to match each row of **X**.
+
 
 
 ## Importance in DSP and Wireless System Design
