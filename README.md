@@ -38,6 +38,8 @@ $$
 \end{bmatrix}
 $$
 
+**Step 4: Least-Squares Solution**
+
 
 
 ## Importance in DSP and Wireless System Design
