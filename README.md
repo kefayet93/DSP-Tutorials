@@ -30,12 +30,12 @@ In the above, matrix **X** represents the sliding windows over the input signal 
 **Step 3: Forming the Input-Output Vector**
 The received vector after digitization is aligned with the input vector to match each row of **X**. The output vector **y** can be given by:
 $$
-\begin{pmatrix}
+\begin{pvector}
   y[L-1] \\
   y{L}   \\
   \vdots \\
   y[N-1] \\
-\end{pmatrix}
+\end{pvector}
 $$
 
 
